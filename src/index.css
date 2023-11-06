@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .input {
+    @apply flex-1 w-full text-base leading-normal text-slate-gray pl-5 p-5 outline-none sm:border-none border border-slate-gray rounded-full;
+  }
+}
+
+@layer utilities {
+  .padding {
+    @apply px-8 py-12;
+    /* Default styles */
+  }
+
+  @screen sm {
+    .padding {
+      @apply px-16 py-24;
+      /* Styles for small screens (sm and above) */
+    }
+  }
+
+  .padding-x {
+    @apply px-8;
+    /* Default styles */
+  }
+
+  @screen sm {
+    .padding-x {
+      @apply px-16;
+      /* Styles for small screens (sm and above) */
+    }
+  }
+
+  .padding-y {
+    @apply py-12;
+    /* Default styles */
+  }
+
+  @screen sm {
+    .padding-y {
+      @apply py-24;
+      /* Styles for small screens (sm and above) */
+    }
+  }
+
+  .padding-l {
+    @apply pl-8;
+    /* Default styles */
+  }
+
+  @screen sm {
+    .padding-l {
+      @apply pl-16;
+      /* Styles for small screens (sm and above) */
+    }
+  }
+
+  .padding-r {
+    @apply pr-8;
+    /* Default styles */
+  }
+
+  @screen sm {
+    .padding-r {
+      @apply pr-16;
+      /* Styles for small screens (sm and above) */
+    }
+  }
+
+  .padding-t {
+    @apply pt-12;
+    /* Default styles */
+  }
+
+  @screen sm {
+    .padding-t {
+      @apply pt-24;
+      /* Styles for small screens (sm and above) */
+    }
+  }
+
+  .padding-b {
+    @apply pb-12;
+    /* Default styles */
+  }
+
+  @screen sm {
+    .padding-b {
+      @apply pb-24;
+      /* Styles for small screens (sm and above) */
+    }
+  }
+
+  .info-text {
+    @apply font-montserrat text-slate-gray text-lg leading-7;
+  }
+}
